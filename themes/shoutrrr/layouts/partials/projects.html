@@ -1,0 +1,22 @@
+<h3>Projects</h3>
+<ul id="projects">
+    {{ range where site.RegularPages "Type" "in" "projects" }}
+    <li style="margin-bottom: 2rem">
+        <div style="display: flex">
+        <img src="{{ .Params.Logo | printf "projects/%s" | absURL }}" style="height:10rem; margin-left:0; vertical-align: bottom;margin-right:1rem">
+            <div style="flex:1; display: flex; flex-direction: column">
+        <a href="{{ .Permalink }}">
+            {{- .Title -}}
+        </a>
+              <small style="flex:1">{{ .Description }}</small>
+
+
+                <div style="display:flex; flex-direction: row; justify-content: flex-end">
+                    <a href="{{- .Params.Docs -}}" title="Documentation" style="margin-right:1rem"><i class="fas fa-book-open"></i> Documentation</a>
+                    <a href="{{- .Params.Github -}}" title="Github"><i class="fab fa-github"></i> Github</a>
+                </div>
+            </div>
+        </div>
+    </li>
+    {{ end }}
+</ul>

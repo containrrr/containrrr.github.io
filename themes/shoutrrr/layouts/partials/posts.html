@@ -5,6 +5,7 @@
         <a href="{{ .Permalink }}">
             {{- .Title -}}
             <small><time>{{ .Date.Format "Jan 2, 2006" }}</time></small>
+            <small>{{ .Content }}</small>
         </a>
     </li>
 {{ end }}

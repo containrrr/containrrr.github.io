@@ -1,13 +1,45 @@
-<header id="banner">
+<header id="banner" style="display: flex; flex-direction: column; justify-items: center">
+    <img src="{{ "logo.png" | absURL }}" style="margin-left:auto;margin-right:auto" width="400" />
+    <div style="display: flex; flex-direction: row; align-items: center; justify-content: space-between ">
     <h2><a href="{{ .Site.BaseURL }}">{{ .Site.Title }}</a></h2>
     <nav>
         <ul>
+            <!--
             <li><a href="{{ .Site.BaseURL }}">posts</a></li>
-            {{ range where .Site.Home.Pages "Title" "!=" "Posts" }}
+            -->
+            {{ range where site.RegularPages "Type" "in" "projects" }}
             <li>
                 <a href="{{ .Permalink }}">{{ .Title }}</a>
             </li>
             {{ end }}
+
+            {{ $currentPage := . }}
+            {{ range .Site.Menus.main }}
+            {{ if .HasChildren }}
+            <li class="{{ if $currentPage.HasMenuCurrent "main" . }}active{{ end }}">
+            <a href="#">
+                {{ .Pre }}
+                <span>{{ .Name }}</span>
+            </a>
+            </li>
+            <ul class="sub-menu">
+                {{ range .Children }}
+                <li class="{{ if $currentPage.IsMenuCurrent "main" . }}active{{ end }}">
+                <a href="{{ .URL }}">{{ .Name }}</a>
+                </li>
+                {{ end }}
+            </ul>
+            {{ else }}
+            <li>
+                <a href="{{ .URL }}">
+                    {{ .Pre }}
+                    <span>{{ .Name }}</span>
+                </a>
+            </li>
+            {{ end }}
+            {{ end }}
+
         </ul>
     </nav>
+    </div>
 </header>
