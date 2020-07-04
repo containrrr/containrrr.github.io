@@ -4,7 +4,17 @@
   
   <url>
     <loc>http://containrrr.dev/</loc>
-    <lastmod>2020-06-12T19:50:20+02:00</lastmod>
+    <lastmod>2020-06-30T19:50:20+02:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://containrrr.dev/posts/</loc>
+    <lastmod>2020-06-30T19:50:20+02:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://containrrr.dev/posts/watchtower6k/</loc>
+    <lastmod>2020-06-30T19:50:20+02:00</lastmod>
   </url>
   
   <url>
@@ -13,16 +23,23 @@
   </url>
   
   <url>
-    <loc>http://containrrr.dev/posts/</loc>
-    <lastmod>2020-06-12T19:50:20+02:00</lastmod>
-  </url>
-  
-  <url>
     <loc>http://containrrr.dev/categories/</loc>
   </url>
   
   <url>
+    <loc>http://containrrr.dev/projects/</loc>
+  </url>
+  
+  <url>
+    <loc>http://containrrr.dev/projects/shoutrrr/</loc>
+  </url>
+  
+  <url>
     <loc>http://containrrr.dev/tags/</loc>
+  </url>
+  
+  <url>
+    <loc>http://containrrr.dev/projects/watchtower/</loc>
   </url>
   
 </urlset>

@@ -9,26 +9,93 @@
     
     <link rel="stylesheet" href="/css/style.min.css">
 
+
+    <link rel="stylesheet" href="/fa5/css/brands.min.css" />
+    <link rel="stylesheet" href="/fa5/css/regular.min.css" />
+    <link rel="stylesheet" href="/fa5/css/solid.min.css" />
+    <link rel="stylesheet" href="/fa5/css/fontawesome.min.css" />
+
     <title>containrrr.dev</title>
 </head>
-<body><header id="banner">
+<body><header id="banner" style="display: flex; flex-direction: column; justify-items: center">
+    <img src="http://containrrr.dev/logo.png" style="margin-left:auto;margin-right:auto" width="400" />
+    <div style="display: flex; flex-direction: row; align-items: center; justify-content: space-between ">
     <h2><a href="http://containrrr.dev/">containrrr.dev</a></h2>
     <nav>
         <ul>
-            <li><a href="http://containrrr.dev/">posts</a></li>
             
+            
+            <li>
+                <a href="http://containrrr.dev/projects/shoutrrr/">Shoutrrr</a>
+            </li>
+            
+            <li>
+                <a href="http://containrrr.dev/projects/watchtower/">Watchtower</a>
+            </li>
+            
+
+            
+            
+
         </ul>
     </nav>
+    </div>
 </header>
 <main id="content">
 <h3>Posts</h3>
 <ul id="posts">
 
     <li>
-        <a href="http://containrrr.dev/posts/hello-world/">Hello World<small><time>Jun 12, 2020</time></small>
+        <a href="http://containrrr.dev/posts/watchtower6k/">Watchtower 6k<small><time>Jun 30, 2020</time></small>
+            <small><p>Watchtower reached 6000 stars on Github! 🎉</p>
+</small>
         </a>
     </li>
 
+    <li>
+        <a href="http://containrrr.dev/posts/hello-world/">Hello Worrrld<small><time>Jun 12, 2020</time></small>
+            <small><p>We randomly decided to buy a domain name for the organization.<br />
+Welcome to containrrr.dev!</p>
+</small>
+        </a>
+    </li>
+
+</ul>
+<h3>Projects</h3>
+<ul id="projects">
+    
+    <li style="margin-bottom: 2rem">
+        <div style="display: flex">
+        <img src="http://containrrr.dev/projects/shoutrrr.png" style="height:10rem; margin-left:0; vertical-align: bottom;margin-right:1rem">
+            <div style="flex:1; display: flex; flex-direction: column">
+        <a href="http://containrrr.dev/projects/shoutrrr/">Shoutrrr</a>
+              <small style="flex:1">Notification library for gophers and their furry friends. Heavily inspired by caronc/apprise.</small>
+
+
+                <div style="display:flex; flex-direction: row; justify-content: flex-end">
+                    <a href="https://container.dev/shoutrrr" title="Documentation" style="margin-right:1rem"><i class="fas fa-book-open"></i> Documentation</a>
+                    <a href="https://github.com/containrrr/watchtower" title="Github"><i class="fab fa-github"></i> Github</a>
+                </div>
+            </div>
+        </div>
+    </li>
+    
+    <li style="margin-bottom: 2rem">
+        <div style="display: flex">
+        <img src="http://containrrr.dev/projects/watchtower.png" style="height:10rem; margin-left:0; vertical-align: bottom;margin-right:1rem">
+            <div style="flex:1; display: flex; flex-direction: column">
+        <a href="http://containrrr.dev/projects/watchtower/">Watchtower</a>
+              <small style="flex:1">A process for automating Docker container base image updates.</small>
+
+
+                <div style="display:flex; flex-direction: row; justify-content: flex-end">
+                    <a href="https://container.dev/watchtower" title="Documentation" style="margin-right:1rem"><i class="fas fa-book-open"></i> Documentation</a>
+                    <a href="https://github.com/containrrr/watchtower" title="Github"><i class="fab fa-github"></i> Github</a>
+                </div>
+            </div>
+        </div>
+    </li>
+    
 </ul>
 
         </main><footer id="footer">

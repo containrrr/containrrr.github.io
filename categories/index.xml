@@ -12,13 +12,29 @@
     
     
     <item>
-      <title>Hello World</title>
+      <title>Watchtower 6k</title>
+      <link>http://containrrr.dev/posts/watchtower6k/</link>
+      <pubDate>Tue, 30 Jun 2020 19:50:20 +0200</pubDate>
+      
+      <guid>http://containrrr.dev/posts/watchtower6k/</guid>
+      <description>Watchtower reached 6000 stars on Github! 🎉</description>
+    </item>
+    
+    
+    
+    <item>
+      <title>Hello Worrrld</title>
       <link>http://containrrr.dev/posts/hello-world/</link>
       <pubDate>Fri, 12 Jun 2020 19:50:20 +0200</pubDate>
       
       <guid>http://containrrr.dev/posts/hello-world/</guid>
-      <description></description>
+      <description>We randomly decided to buy a domain name for the organization.
+Welcome to containrrr.dev!</description>
     </item>
+    
+    
+    
+    
     
     
   </channel>
