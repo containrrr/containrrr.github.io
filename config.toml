@@ -1,4 +1,4 @@
-baseURL = "http://containrrr.dev/"
+baseURL = "https://containrrr.dev/"
 languageCode = "en-us"
 title = "containrrr.dev"
 theme = "shoutrrr"
