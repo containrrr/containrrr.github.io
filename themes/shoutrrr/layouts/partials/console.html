@@ -1,0 +1,42 @@
+<style>
+  .console {
+    background: #444455;
+    color: #eeeeff;
+    font-family: monospace;
+    height: 120px;
+    margin-top: 20px;
+    padding: 24px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(150, 150, 200, 0.8);
+  }
+
+  .ps {
+    color: pink;
+  }
+</style>
+<script src="/typed.js"></script>
+<div id="typed-strings">
+  <p>
+    <span class="ps">$</span> shoutrrr send \<br/>
+    &nbsp;&nbsp;&nbsp; --url "&lt;SERVICE_URL&gt;" \<br/>
+    &nbsp;&nbsp;&nbsp; --message "&lt;MESSAGE_BODY&gt;"<br/>
+  </p>
+  <p>
+    <span class="ps">$</span> docker run \<br/>
+    &nbsp;&nbsp;&nbsp; --name watchtower \<br/>
+    &nbsp;&nbsp;&nbsp; -v /var/run/docker.sock:/var/run/docker.sock \<br/>
+    &nbsp;&nbsp;&nbsp; containrrr/watchtower<br/>
+  </p>
+</div>
+<div class="console">
+  <span id="typed"></span>
+</div>
+<script>
+  var typed = new Typed('#typed', {
+    stringsElement: '#typed-strings',
+    typeSpeed: 50,
+    loop: true,
+    cursorChar: '_',
+    fadeOut: true,
+  });
+</script>
